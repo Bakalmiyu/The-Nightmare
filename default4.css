@@ -1,0 +1,70 @@
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center2
+https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover copy and modify
+this style sheet is words center, picture fade in*/
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+body {
+    /*Position the text right, sets background color to black, set font to Gloria Hallelujah Cursive*/
+    background-color: black;
+    color: gainsboro;
+    text-align: Center;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.sentence {
+    /*Position of sentence is center, font size is 12 pixel plus relative to 1% of the width of the viewport
+ set font to Gloria Hallelujah Cursive, the font color is white*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: calc(12px + 1vw);
+
+    transform: translate(-50%, -50%);
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+}
+
+.img {
+    /*Set width of tags with img class to 100% of the screen, set the opacity to 0.3 and fade in for 6seconds*/
+    width: 50%;
+    opacity: 0.3;
+    animation: fadein 6s;
+
+}
+
+@keyframes fadein {
+    /*Change Opacity from 0 to 1, to simulate fading out*/
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.3;
+    }
+
+}
+
+a {
+    /*Sets position of the "a" element, sets background color to black, sets opacity to 0.4, sets the color of
+    the text to gainsboro,sets text decoration to none, set the font size 12 pixel plus relative to 1% of
+    the width of the viewport and sets the transition duration to 1 second.*/
+    padding: 2px 10px;
+    font-size: calc(12px + 1vw);
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: black;
+    color: gainsboro;
+    border-radius: 0px;
+    text-decoration: none;
+    opacity: .4;
+    transition-duration: 1s;
+}
+
+a:hover {
+    /*When "a" is hovered over, the color of the words defined in element "a" will turn red and the opacity
+    is set to 1 and when you hover away the words will transition from red to inherit color
+    during a duration of 1 second*/
+    color: red;
+    opacity: 1;
+    transition-duration: 1s;
+}
