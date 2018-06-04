@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <script type="text/javascript" src="https://tonejs.github.io/build/Tone.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="default.css">
+
+    </header>
+    <body onload="main()" >
+
+        <img class = "img" src="ap.jpg" alt="">
+
+        <div class = "s">
+ slide11
+
+        </div>
+        <div class="button"><a href="start.html">Restart</a></div>
+
+    </body>
+</html>

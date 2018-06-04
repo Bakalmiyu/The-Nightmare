@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+a {
+    font-size: 6vw;
+    text-decoration: none;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+    position: absolute;
+}
+
+{
+}
+
+body {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+}
